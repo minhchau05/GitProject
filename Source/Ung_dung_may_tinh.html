@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <input type="number" placeholder="Nhập số thứ nhất" id="n1">
+    <input type="number" placeholder="Nhập số thứ hai" id="n2">
+    <tr>
+        <td>
+            <button type="button" id="cong" onclick="addittion()">Cộng</button>
+            <button type="button" id="tru" onclick="subtraction()">Trừ</button>
+        </td>
+        </td>
+    </tr>
+    <p id="result">Result:</p>
+<script>
+    function addittion()  {
+        let number1 = document.getElementById("n1").value;
+        let number2 = document.getElementById("n2").value;
+        let result = Number(number1) + Number(number2);
+        document.getElementById("result").innerHTML = result;
+    }
+    function subtraction()  {
+        let number1 = document.getElementById("n1").value;
+        let number2 = document.getElementById("n2").value;
+        let result = Number(number1) - Number(number2);
+        document.getElementById("result").innerHTML = result;
+    }
+</script>
+</body>
+</html>
