@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    let a = +prompt("Nhập a:");
+    let b = +prompt("Nhập b:");
+    if (a===0) {
+        if (b===0) {
+            alert(" Phương Trình Vô Nghiệm. ");
+        }else {
+            alert(" Phương Trình Vô Số Nghiệm. ");
+        }
+    }else {
+        let x = (-b / a);
+        alert(" Phương Trình Có Nghiệm là: " + x)
+    }
+</script>
+</body>
+</html>

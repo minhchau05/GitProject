@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let soTienBanDau = +prompt("Nhập Số Tiền Đã Vay");
+    let soThangChoVay = +prompt("Nhập Số Tháng Cho Vay");
+    let laiSuatHangThang = +prompt("Nhập Số Lãi Hàng Tháng");
+    let laiNganHang = soTienBanDau * (soThangChoVay * 30)/365 * laiSuatHangThang;
+    document.write ("Số Tiền Lãi Bạn Phải Đóng Là: " + laiNganHang);
+</script>
+</body>
+</html>
