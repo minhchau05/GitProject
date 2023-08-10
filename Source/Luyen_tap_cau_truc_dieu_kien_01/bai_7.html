@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let soPhutGoiDien = +prompt("Nhập Số Phút Gọi Điện Tháng Này ");
+    let cuocPhi = 1;
+    if (soPhutGoiDien>=200) {
+        cuocPhi = cuocPhi * soPhutGoiDien * 500;
+    }else if (soPhutGoiDien>=150) {
+        cuocPhi = cuocPhi * soPhutGoiDien * 300;
+    }else {
+        cuocPhi = cuocPhi * soPhutGoiDien * 100;
+    }
+    alert(" Cước Phí Gọi Điện là: " + cuocPhi );
+</script>
+</body>
+</html>
