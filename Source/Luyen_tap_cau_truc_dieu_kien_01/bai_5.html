@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let diemKT = +prompt("Nhap diem bai kiem tra");
+    let diemGK = +prompt("Nhap diem thi giua ky");
+    let diemCK = +prompt("Nhap diem thi cuoi ky");
+    let diemTB = (diemKT + diemGK*2 + diemCK*3)/6
+    if(diemTB>=9) {
+        alert(" Điểm TB của bạn là: " + diemTB + " Loại Xuất Sắc ")
+    }else if(diemTB>=8) {
+        alert(" Điểm TB của bạn là: " + diemTB + " Loai Giỏi ")
+    }else if(diemTB>=6.5) {
+        alert(" Điểm TB của bạn là: " + diemTB + " Loại Khá ")
+    }else if(diemTB>=5) {
+        alert(" Điểm TB của bạn là: " + diemTB + " Loai Trung Bình ")
+    }else {
+        alert(" Điểm TB của bạn là: " + diemTB + " Loai Yếu ")
+    }
+</script>
+</body>
+</html>
