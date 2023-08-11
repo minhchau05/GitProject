@@ -8,7 +8,11 @@
 <script>
     let tienCuaBan = +prompt("Nhập Số Tiền Của Bạn");
     let thuePhaiTra = tienCuaBan * 5/100;
-    document.write (" Thuế Phải Trả Của Bạn Là: " + thuePhaiTra + "VND");
+    if (tienCuaBan>0) {
+        document.write(" Thuế Phải Trả Của Bạn Là: " + thuePhaiTra + "VND");
+    }else {
+        document.write("Bạn Đã Nhập Sai Vui Lòng Nhập Lại");
+    }
 </script>
 </body>
 </html>

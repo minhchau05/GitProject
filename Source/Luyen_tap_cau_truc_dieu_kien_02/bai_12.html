@@ -10,7 +10,11 @@
     let soThangChoVay = +prompt("Nhập Số Tháng Cho Vay");
     let laiSuatHangThang = +prompt("Nhập Số Lãi Hàng Tháng");
     let laiNganHang = soTienBanDau * (soThangChoVay * 30)/365 * laiSuatHangThang;
-    document.write ("Số Tiền Lãi Bạn Phải Đóng Là: " + laiNganHang);
+    if (soTienBanDau>0 && soThangChoVay>0 && laiSuatHangThang>0) {
+        document.write("Số Tiền Lãi Bạn Phải Đóng Là: " + laiNganHang + "VND");
+    }else {
+        document.write("Bạn Đã Nhập Sai Vui Lòng Nhập Lại");
+    }
 </script>
 </body>
 </html>

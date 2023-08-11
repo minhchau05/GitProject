@@ -8,7 +8,11 @@
 <script>
     let sokWDien = +prompt("Nhập Số kW Điện Bạn Đã Sử Dụng.");
     let tienDien = sokWDien * 2000;
-    document.write (" Tiền Điện Của Bạn là: " + tienDien + "VND");
+    if (sokWDien>0) {
+        document.write(" Tiền Điện Của Bạn là: " + tienDien + "VND");
+    }else {
+        document.write("Bạn Nhập Sai Vui Lòng Nhập Lại");
+    }
 </script>
 </body>
 </html>
