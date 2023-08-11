@@ -10,17 +10,17 @@
     let b = +prompt("Nhập b");
     let c = +prompt("Nhập c");
     let denta = b * b - 4 * a * c;
-    let x1 = -b / (2 * a);
-    let x2= -b / (2 * a);
-    if (denta < 0) {
-        alert("Phương Trình Vô Nghiệm");
+    // let x1 = -b / (2 * a);
+    // let x2= -b / (2 * a);
+    if (denta > 0) {
+        let x1 = -b / (2 * a);
+        let x2= -b / (2 * a);
+        alert(" Phương Trình Có 2 Nghiệm x1,x2 Lần Lượt Là: " + x1 + "," + x2);
     } else if (denta===0) {
+        let x = -b / a * 2;
         alert(x1 + x2);
     } else {
-        let x3 = (-b + Math.sqrt(denta) / 2 * a);
-        let x4 = (-b - Math.sqrt(denta) / 2 * a);
-       document.write("Phương Trình Có Nghiệm Kép 1:" + x3 + "<br>" )
-        document.write("Phương Trình Có Nghiệm Kép 2:" + x4)
+        alert("Phương Trình Vô Nghiệm");
     }
 </script>
 </body>
