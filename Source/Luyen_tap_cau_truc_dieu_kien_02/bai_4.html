@@ -9,7 +9,11 @@
     let doDaiCanhA = +prompt("Nhập Độ Dài Cạnh a");
     let doDaiCanhB = +prompt("Nhập Độ Dài Cạnh b");
     let dienTich = doDaiCanhA * doDaiCanhB;
-    document.write (" Diện Tích Hình Chữ Nhật Là: " + dienTich);
+    if (doDaiCanhA>0 && doDaiCanhB>0) {
+        document.write(" Diện Tích Hình Chữ Nhật Là: " + dienTich);
+    }else {
+        document.write("Bạn Đã Nhập Sai Vui Lòng Nhập Lại");
+    }
 </script>
 </body>
 </html>

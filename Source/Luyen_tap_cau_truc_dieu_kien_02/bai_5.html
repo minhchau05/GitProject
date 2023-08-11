@@ -9,7 +9,11 @@
     let doDaiCanhKeA = +prompt("Nhập Số Cạnh Kề a");
     let doDaiCanhKeB = +prompt("Nhập số Cạnh Kề b");
     let dienTich = 1/2 * (doDaiCanhKeA * doDaiCanhKeB);
-    document.write (" Diện Tích Tam Giác Vuông Là: " + dienTich);
+    if (doDaiCanhKeA>0 && doDaiCanhKeB>0) {
+        document.write(" Diện Tích Hình Tam Giác Vuông Là: " + dienTich);
+    }else {
+        document.write("Bạn Đã Nhập Sai Vui Lòng Nhập Lại");
+    }
 </script>
 </body>
 </html>
