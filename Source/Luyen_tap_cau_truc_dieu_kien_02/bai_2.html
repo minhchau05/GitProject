@@ -5,10 +5,42 @@
     <title>Title</title>
 </head>
 <body>
+<table>
+    <tr>
+        <td><input type="text" id="number"></td>
+    </tr>
+    <tr>
+        <td>
+            <select id="from">
+                <option>m</option>
+                <option>feet</option>
+            </select>
+            <select id="to">
+                <option>m</option>
+                <option>feet</option>
+            </select>
+        </td>
+        <td>
+            <button type="button" id="check" onclick="check()">Kiểm Tra</button>
+        </td>
+    </tr>
+</table>
+<p id="result">Kết Quả:</p>
 <script>
-    let m = +prompt ("Nhập Số m Mà Bạn Muốn Đổi")
-    let ft = m * 3.2008;
-    document.write (" Số Feet là :" + ft);
+    function check () {
+        let number = +document.getElementById("number").value;
+        let from = document.getElementById("from").value;
+        let to = document.getElementById("to").value;
+        let result;
+        if (from==="m" && to==="feet") {
+            result = number * 3.2008;
+        }else if (from==="feet" && to==="m") {
+            result = number / 3.2008;
+        }else {
+            result = number;
+        }
+        document.getElementById("result").innerText = result;
+    }
 </script>
 </body>
 </html>
