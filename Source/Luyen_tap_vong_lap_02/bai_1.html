@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = 0;
+    let b = 1;
+    let sum = 0;
+    let number = '';
+    for (i = 0; i < 100; i++) {
+        sum = a + b;
+        number += b +"<br>";
+        a = b;
+        b = sum;
+    }
+    document.write(number + "<br>");
+</script>
+</body>
+</html>
