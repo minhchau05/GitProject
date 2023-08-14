@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let money = +prompt("Nhập Số Tiền Ban Đầu:")
+    let month = +prompt("Nhập Số Tháng Cho Vay:")
+    let percent = +prompt("Nhập Số Lãi Suất Hàng Tháng:")
+    let interest = 0;
+    for (i = 0; i < month; i++) {
+         interest = money * (percent/100);
+         money = money + interest;
+    }
+    document.write("Tổng Số Tiền Bạn Phải Trả Là:" + money + "VND");
+</script>
+</body>
+</html>

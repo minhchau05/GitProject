@@ -6,7 +6,14 @@
 </head>
 <body>
 <script>
-
+    let num = +prompt("Nhập Số Nguyên Dương Cần Tính Giai Thừa:");
+    let a1=1;
+    let a2=1;
+     while (a1<=num){
+         a2=a1*a2
+         a1++
+     }
+     document.write("Giai Thừa Của Số Nguyên Dương Là:" + a2);
 </script>
 </body>
 </html>
