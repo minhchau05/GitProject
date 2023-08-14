@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let  so = 0;
+    let sum = 0;
+    let day = ''
+    for (let i = 0; i <30; i++) {
+        if ( so % 7 ===0) {
+        so = so + 7;
+        sum += so;
+        day = day + so +"<br>";
+        }
+    }
+    document.write(day);
+    document.write("Tổng 30 Số Đầu Tiên Chia Hết Cho 7 Là :" + sum)
+</script>
+</body>
+</html>
