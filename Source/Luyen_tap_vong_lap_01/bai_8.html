@@ -5,26 +5,25 @@
     <title>Title</title>
 </head>
 <body>
-<button onclick="handleRandomNumber()">Chơi</button>
+<button onclick="doanso()">Bắt Đầu</button>
 <script>
-    function handleRandomNumber() {
-        let rd = +prompt("Nhập khoảng muốn đoán: ");
-        let randomNumber = Math.floor(Math.random() * rd);
-        alert(randomNumber);
+    function doanso () {
+        let num1 = +prompt("Số Bạn Muốn Đoán Trong Khoảng Là Bao Nhiêu ? ");
+        let num2 = Math.floor(Math.random() * num1);
         let count = 0;
         do {
-            let number = +prompt("Số muốn đoán: ");
-            if (number === randomNumber) {
-                alert("Bạn đoán đúng");
-                break; // Kết thúc vòng lặp
-            } else if (number > randomNumber) {
-                alert("Số bạn đoán lớn hơn");
+            let number = +prompt("Nhập Số Bạn Muốn Đoán: ");
+            if (number === num2) {
+                alert("Bạn Đã Đoán Đúng.");
+                break;
+            } else if (number > num2) {
+                alert("Số Bạn Đoán Lớn Hơn.");
             } else {
-                alert("Số bạn đoán nhỏ hơn");
+                alert("Số Bạn Đoán Nhỏ Hơn");
             }
             count = count + 1;
             if (count >= 3) {
-                alert("Bạn đã hết số lượt đoán");
+                alert("Bạn Đã Hết Lượt Đoán.");
                 break;
             }
         } while (true);
