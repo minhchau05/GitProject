@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = ['a', '1', 'b', '2', 'c', '3'];
+    let size = arr.length;
+    let count = 0;
+    for (let i = 0; i < size; i++) {
+        if (!isNaN(arr[i])) {
+            count++;
+        }
+    }
+    document.write("Số Ký Tự Số Trong Mảng Là:" + count);
+</script>
+</body>
+</html>

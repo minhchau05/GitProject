@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let str = "Đây là chuỗi mẫu";
+    let wordCount = 0;
+    for (let i = 0; i < str.length; i++) {
+        if (str[i] === " " && (str[i + 1] !== " " && str[i + 1] !== undefined)) {
+            wordCount++;
+        }
+    }
+    if (str[str.length - 1] !== " ") {
+        wordCount++;
+    }
+    document.write("Số từ trong chuỗi là: " + wordCount);
+</script>
+</body>
+</html>

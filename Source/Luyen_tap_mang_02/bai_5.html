@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let str1 = +prompt("Nhập Chuỗi Thứ Nhất:");
+    let str2 = +prompt("Nhập Chuỗi Thứ Hai:");
+    let sum = true;
+    if (str1.length !== str2.length) {
+        sum = false;
+    } else {
+        for (let i = 0; i < str1.length; i++) {
+            if (str1[i] !== str2[i]) {
+                sum = false;
+                break;
+            }
+        }
+    }
+    if (sum) {
+        document.write("Hai Chuỗi Giống Nhau.");
+    } else {
+        document.write("Hai Chuỗi Không Giống Nhau.");
+    }
+</script>
+</body>
+</html>

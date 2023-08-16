@@ -8,27 +8,28 @@
 <script>
     let arr = [];
     do {
-        let number = +prompt("Nhap chieu dai cua mang");
+        let number = +prompt("Nhập Chiều Dài Của Mảng:");
         if (!isNaN(number) && number > 0) {
             for (let i = 0; i < number; i++) {
-                arr[i]= prompt("Nhap phan tu thu " + i + " mang");
-            } document.write("Cac phan tu cua mang la:" + arr);
-        break;
-        }else{
-            alert("Ban nhap sai vui long nhap lai:");
-        }
-    }while (true);
-    let newArr1=[]
-    function newArray(arr) {
-        for (let i= 0; i<arr.length;i++){
-            if (arr[i]<0){
-                newArr1.push(arr[i]);
+                arr[i] = +prompt("Nhập Phần Tử Thứ " + i + " Mảng");
             }
-             document.write(newArr1)
+            document.write("Các Phần Tử Của Mảng Là:" + arr + "<br>");
+            break;
+        } else {
+            alert("Bạn Nhập Sai Vui Lòng Nhập Lại:");
         }
-        document.write(newArr1)
+    } while (true);
+    let count=0
 
+    function newArray(arr) {
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] < 0) {
+                count++
+            }
+        }
+        document.write(count)
     }
+    newArray(arr)
 </script>
 </body>
 </html>

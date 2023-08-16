@@ -7,7 +7,7 @@
 <body>
 <script>
     let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-    document.write("mang ban dau: ["+ arr +"]");
+    document.write("Mảng Ban Đầu: [" + arr + "]");
     arr[10] = parseInt(prompt("Nhập Số Nguyên V:"));
     let check = 0;
     for (let i = 0; i < arr.length - 1; i++) {
@@ -15,8 +15,18 @@
             check = 1;
         }
     }
+    for (let j = 0; j < arr.length - 1; j++ ){
+        if (arr[j] === arr[arr.length - 1]) {
+            check = 1;
+            for (let k = j; k < arr.length; k++) {
+                arr[k] = arr[k + 1];
+            }
+            arr.length = arr.length - 1
+        }
+        }
     if (check === 1) {
-        document.write(" V is in the array");
+        document.write(" V is in the array" + "<br>");
+        document.write("Mã Sau Khi Xóa V: [" + arr +"]");
     } else {
         document.write( " V is not in the array");
     }

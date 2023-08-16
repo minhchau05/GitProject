@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = [3, 5, 6, 1, 11, 17, 10, 2, 16, 20];
+    document.write("Mảng Ban Đầu: [" + arr + "]" + "<br>");
+    for (let i = 0; i < 10; i++){
+        for (let j = (i + 1); j < arr.length; j++) {
+            if (arr[i] < arr[j]) {
+                let temp = arr[i];
+                arr[i] = arr[j];
+                arr[j] = temp;
+            }
+        }
+    }
+    document.write("Mảng Đã Được Sắp Xếp Theo Thứ Tự Giảm Dần: [" + arr + "]");
+</script>
+</body>
+</html>

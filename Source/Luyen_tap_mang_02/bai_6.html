@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = prompt("Nhập Vào Mảng Ký Tự:");
+    let str = arr.split(",");
+    for ( i = 0; i < str.length; i++) {
+        if (str[i] === "-") {
+            str[i] = "_";
+        }
+    }
+    let result = "Mảng Ký Tự Sau Khi Thay Thế: " + str.join(", ");
+    document.write(result);
+</script>
+</body>
+</html>
