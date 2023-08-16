@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = [];
+    do {
+        let number = +prompt("Nhap chieu dai cua mang");
+        if (!isNaN(number) && number > 0) {
+            for (let i = 0; i < number; i++) {
+                arr[i]= prompt("Nhap phan tu thu " + i + " mang");
+            } document.write("Cac phan tu cua mang la:" + arr);
+        break;
+        }else{
+            alert("Ban nhap sai vui long nhap lai:");
+        }
+    }while (true);
+    let newArr1=[]
+    function newArray(arr) {
+        for (let i= 0; i<arr.length;i++){
+            if (arr[i]<0){
+                newArr1.push(arr[i]);
+            }
+             document.write(newArr1)
+        }
+        document.write(newArr1)
+
+    }
+</script>
+</body>
+</html>

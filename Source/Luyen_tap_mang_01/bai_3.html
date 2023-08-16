@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = [5, 8, 2, 6, 9, 3, 1, 4];
+    let max = arr[0];
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] > max) {
+            max = arr[i];
+        }
+    }
+    document.write("Giá Trị Lớn Nhất Trong Mảng Là:" + max + "<br>");
+    let sum = arr[0];
+    for (let i = 0; i < arr.length; i++) {
+        sum += arr[i]
+    }
+    let avg = sum / arr.length;
+    document.write("Giá Trị Trung Bình Của Các Phần Tử Trong Mảng Là:" + avg);
+</script>
+</body>
+</html>
