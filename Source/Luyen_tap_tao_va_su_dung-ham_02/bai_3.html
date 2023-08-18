@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function calculateFactorial(number) {
+        if (number === 0 || number === 1) {
+            return 1;
+        } else {
+            return number * calculateFactorial(number - 1);
+        }
+    }
+    let inputNumber = prompt("Nhập Số Giai Thừa: ")
+    let factorial = calculateFactorial(inputNumber);
+    document.write("Giai Thừa Của " + inputNumber + " là: " + factorial);
+</script>
+</body>
+</html>

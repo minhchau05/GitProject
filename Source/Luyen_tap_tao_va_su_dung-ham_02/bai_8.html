@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    changeArray();
+
+    function changeArray() {
+        let myarray = []
+        do {
+            let a = +prompt("Nhập Số Lượng Phần Tử Trong Mảng:")
+            if (!isNaN(a) && a > 0) {
+                for (let i = 0; i < a; i++) {
+                    myarray[i] = +prompt("Nhập Phần Tử Thứ " + (i + 1))
+                }
+                break;
+            } else {
+                alert("Bạn Đã Nhập Sai Vui Lòng Nhập Lại")
+            }
+        }
+        while (true)
+        document.write("Mảng Ban Đầu Là: " + myarray)
+        let temp;
+        for (j = 0; j < myarray.length / 2; j++) {
+            temp = myarray[j]
+            myarray[j] = myarray[myarray.length - 1 - j]
+            myarray[myarray.length - 1 - j] = temp
+        }
+        alert('Mảng Sau Khi Đảo Vị Trí Là: ' + myarray)
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function addNumbers() {
+       let  firstNum = prompt("Nhập Giá Trị 1: ")
+        let secondNum = prompt("Nhập Giá Trị 2: ")
+        result = firstNum + secondNum;
+        alert("Giá Trị Của Result Trước Khi Gọi Hàm Là: " + result);
+        return result;
+    }
+    result = 0;
+    alert("Giá Trị Của Result Trước Khi Gán Giá Trị Từ Hàm Là: " + result);
+    result = addNumbers();
+    alert("Giá Trị Của Result Sau Khi Gọi Hàm Là: " + result)
+</script>
+</body>
+</html>

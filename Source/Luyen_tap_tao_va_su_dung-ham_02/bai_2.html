@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function calculateArea(radius) {
+        return Math.PI * radius * radius;
+    }
+    function calculatePerimeter(radius) {
+        return 2 * Math.PI * radius;
+    }
+    let radius = prompt("Nhập Bán Kính Tròn: ")
+    let area = calculateArea(radius);
+    let perimeter = calculatePerimeter(radius);
+
+    document.write("Diện Tích Hình Tròn Có Bán Kính " + " Là: " + area + "<br>")
+    document.write("Chu Vi Hình Tròn Có Bán Kính " + " Là: " + perimeter);
+</script>
+</body>
+</html>

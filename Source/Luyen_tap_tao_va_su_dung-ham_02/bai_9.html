@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = ['1', '2', '3', '2', '2', '3', '1', '1', '4'];
+    let character = prompt("Nhập Một Ký Tự Bất Kỳ:");
+    document.write("Mảng Gồm [" + arr + "]<br>");
+    function checkArr(character, arr) {
+        let count = 0
+        for (let i = 0; i < arr.length; i++) {
+            if (character === arr[i]) {
+                count++
+            }
+        }if (count > 0) {
+            return count;
+        } else {
+            return -1;
+        }
+    }
+    let check = checkArr(character, arr);
+    if (check > 0) {
+        document.write("Có " + check + " Ký Tự " + character + " Trong Mảng")
+    } else {
+        document.write("Trả Về -1")
+    }
+</script>
+</body>
+</html>

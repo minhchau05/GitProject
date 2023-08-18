@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function processParameters(param1, param2) {
+        if (param1 > param2) {
+            alert("Tham Số Thứ Nhất Lớn Hơn Tham Số Thứ Hai");
+        } else {
+            return param1 + param2;
+        }
+    }
+    let firstParam = 8;
+    let secondParam = 8;
+    let result = processParameters(firstParam, secondParam);
+
+    if (typeof result !== 'undefined') {
+        document.write("Tổng Của Hai Tham Số: " + result);
+    }
+</script>
+</body>
+</html>
